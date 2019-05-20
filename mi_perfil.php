@@ -18,8 +18,10 @@ session_start();
 <div class="main">
     <div class="whitespace">
     </div>
-    <div class="foto-usuario">
-       
+    <!-- TODO: falta actualizar automaticamente la foto a la pagina y arreglar el estilo -->
+    <div class="foto-usuario" style="position : relative; display : flex;        justify-content: center;
+        align-items: center; ">
+      <img src=" <?php echo "./uploads/".$_SESSION["foto"]; ?>" alt="" style="position:absolute; width : 100%;" >
     </div>
     <div class="perfil-info">
         <div class="control">

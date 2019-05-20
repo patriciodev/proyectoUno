@@ -29,6 +29,7 @@
                 $resul = $cnx->query($query);
                 $registro = $resul->fetch_assoc();
                 $_SESSION["nombre"] = $registro["NOMBRE"];
+                $_SESSION["foto"] = $registro["FOTO"];
                 echo 1;
 
             }else{

@@ -4,19 +4,27 @@ require_once('conexion.php');
 
 session_start();
 
-
+if(isset($_SESSION["login"]) == TRUE){
 /*TODO: subir fotos a la base de datos para el usuario!*/
-$nombre_imagen = $_FILES["imagen"]["foto"];
-$tipo_imagen = $_FILES["imagen"]["type"];
-$tamano_imagen = $_FILES["imagen"]["size"];
+$nombre_imagen = $_FILES["foto"]["name"];
+$tipo_imagen = $_FILES["foto"]["type"];
+$tamano_imagen = $_FILES["foto"]["size"];
 
 //nombre en la carpeta destino
-$carpeta_destino["DOCUMENT_ROOT"].'./uploads';
+$carpeta_destino=$_SERVER["DOCUMENT_ROOT"].'/validar/uploads/';
 
-move_uploaded_file($_FILES["imagen"]["tmp_name"],$carpeta_destino.$nombre_imagen);
+$correo = $_SESSION["usuario"];
 
-$q = "INSER INTO CLIENTE(FOTO) VALUES('$carpeta_destino.$nombre_imagen');";
+move_uploaded_file($_FILES["foto"]["tmp_name"],$carpeta_destino.$nombre_imagen);
+$q = "UPDATE CLIENTE SET FOTO = '$nombre_imagen' WHERE CORREO ='$correo';";
 
-$resul = mysqli_query($cnx,$query); 
+$update = mysqli_query($cnx,$q);
+
+    if($update){
+        echo 1;
+    }else{
+        echo 0;
+    }
+}
 
 ?>
