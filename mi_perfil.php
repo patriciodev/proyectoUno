@@ -23,7 +23,10 @@ session_start();
     </div>
     <div class="perfil-info">
         <div class="control">
-            <button>editar perfil</button>
+            <form enctype="multipart/form-data" action="./php/subirfoto.php" method="post">
+            <input type="file" name="foto">
+            <input type="submit" value="subirfoto">
+        </form>
         </div>
         <p>Nombre : <?php echo $_SESSION["nombre"] ?> </p>
         <p>correo : <?php  echo  $_SESSION["usuario"]  ?></p>
