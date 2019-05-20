@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Nunito', sans-serif;
+}
+
+nav {
+  width: 100%;
+  height: 9vh;
+}
+
+nav .back {
+  padding: 1em;
+}
+
+nav .back i {
+  cursor: pointer;
+  color: #7676ca;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container h1 {
+  text-align: center;
+  margin: 5% auto;
+}
+
+.container .form1 {
+  display: block;
+}
+
+.container .form1 input {
+  width: calc(100% - 30px);
+  padding: 15px;
+  margin: 2% auto;
+  border: 1px solid #7676ca;
+  border-radius: 5px;
+}
+
+.container .form1 button {
+  width: 100%;
+  padding: 15px;
+  background: #7676ca;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.container .form1 button:hover {
+  background: white;
+  color: #7676ca;
+  border: 1px solid #7676ca;
+}
+/*# sourceMappingURL=eliminar-usuario.css.map */

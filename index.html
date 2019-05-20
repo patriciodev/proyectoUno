@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>opciones</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="info">
+            <h1>TEST WEBSITE</h1>
+        </div>
+        <div class="botones">
+            <button id="registro">Registrar Usuario</button>
+            <button id="inicio-sesion">Inicio sesion</button>    
+        </div>
+        <div class="diseno">     
+        </div>
+    </div>
+
+<script>
+    var registro = document.getElementById("registro");
+    var inicioSesion = document.getElementById("inicio-sesion");
+    // var eliminar = document.getElementById("eliminar");
+
+    registro.addEventListener("click", () => {
+        setTimeout(() => {
+            window.location.href = "registro.php";
+        },1000);
+    });
+    inicioSesion.addEventListener("click", () => {
+        setTimeout(() => {
+            window.location.href = "inicio-sesion.php";
+        },1000);
+    });
+    // eliminar.addEventListener("click", () => {
+    //     setTimeout(() => {
+    //         window.location.href = "eliminar-usuario.php";
+    //     },1000);
+    // });
+
+</script>
+
+</body>
+</html>

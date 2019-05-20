@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: #2a2c5a;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container .info {
+  margin: 20% auto;
+  display: block;
+}
+
+.container .info h1 {
+  text-align: center;
+  color: white;
+  font-size: 2.4em;
+}
+
+.container .botones {
+  display: block;
+}
+
+.container button {
+  width: 60%;
+  margin: 4% auto;
+  background: #2a2c5a;
+  color: white;
+  border: 1px solid #2a2c5a;
+  padding: 15px 30px;
+  border-radius: 20px;
+  -webkit-box-shadow: -5px 10px 20px -5px #261049;
+          box-shadow: -5px 10px 20px -5px #261049;
+  -webkit-transition: .4s;
+  transition: .4s;
+  display: block;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.container button:nth-of-type(1) {
+  background: #f7c32e;
+  border: 1px solid #f7c32e;
+  color: #261049;
+}
+
+.container button:nth-of-type(1):hover {
+  background: #2a2c5a;
+  color: #f7c32e;
+}
+
+.container button:hover {
+  background: #f7c32e;
+  color: #2a2c5a;
+  border: 1px solid #f7c32e;
+}
+
+.container button:focus {
+  outline: none;
+}
+
+.container .diseno {
+  background: url("../icn/trazado.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+/*# sourceMappingURL=index.css.map */
